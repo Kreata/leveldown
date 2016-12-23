@@ -38,12 +38,13 @@ OpenWorker::OpenWorker (
   options->create_if_missing      = createIfMissing;
   options->error_if_exists        = errorIfExists;
   options->compression            = compression
-      ? leveldb::kSnappyCompression
+      ? leveldb::kLZ4Compression
       : leveldb::kNoCompression;
   options->write_buffer_size      = writeBufferSize;
   options->block_size             = blockSize;
   options->max_open_files         = maxOpenFiles;
   options->block_restart_interval = blockRestartInterval;
+  options->cache_object_warming   = false;
 };
 
 OpenWorker::~OpenWorker () {

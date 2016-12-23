@@ -1,7 +1,7 @@
 {
-  "name": "leveldown",
-  "description": "A Node.js LevelDB binding, primary backend for LevelUP",
-  "version": "1.5.0",
+  "name": "leveldown-basho-andris",
+  "description": "A Node.js LevelDB (Basho fork) binding, a backend for LevelUP",
+  "version": "1.5.0-andris.5",
   "contributors": [
     "Rod Vagg <r@va.gg> (https://github.com/rvagg)",
     "John Chesley <john@chesl.es> (https://github.com/chesles/)",
@@ -19,9 +19,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/level/leveldown.git"
+    "url": "https://github.com/Kreata/leveldown.git"
   },
-  "homepage": "https://github.com/level/leveldown",
+  "homepage": "https://github.com/Kreata/leveldown",
   "keywords": [
     "leveldb",
     "level"
@@ -31,25 +31,25 @@
     "abstract-leveldown": "~2.6.1",
     "bindings": "~1.2.1",
     "fast-future": "~1.0.2",
-    "nan": "~2.4.0",
-    "prebuild": "^5.0.2"
+    "nan": "~2.5.0",
+    "prebuild": "^5.1.2"
   },
   "devDependencies": {
-    "async": "^2.0.1",
+    "async": "^2.1.4",
     "delayed": "~1.0.1",
     "du": "~0.1.0",
     "faucet": "0.0.1",
     "iota-array": "~1.0.0",
     "lexicographic-integer": "~1.1.0",
     "mkfiletree": "~1.0.1",
-    "monotonic-timestamp": "~0.0.8",
-    "node-uuid": "~1.4.3",
+    "monotonic-timestamp": "~0.0.9",
+    "node-uuid": "~1.4.7",
     "optimist": "~0.6.1",
     "prebuild-ci": "^1.0.9",
     "readfiletree": "~0.0.1",
-    "rimraf": "~2.5.0",
-    "slump": "~2.0.0",
-    "tape": "^4.5.1"
+    "rimraf": "~2.5.4",
+    "slump": "~2.0.1",
+    "tape": "^4.6.3"
   },
   "scripts": {
     "install": "prebuild --install",
